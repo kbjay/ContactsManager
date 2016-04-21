@@ -27,9 +27,4 @@ public class SflashActivity extends ActionBarActivity {
         startActivity(intent);
         this.finish();
     }
-
-
-
-
-
 }
