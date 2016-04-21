@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:roundedimageview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.addressbook.Test_Activity1">
+
+    <LinearLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00bbd2"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_modify"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:text="返回"
+            android:textColor="#000"
+            android:textSize="15sp" />
+        <!-- 取消button自带阴影效果-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="新增联系人"
+            android:textColor="#000"
+
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btn_modify"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:text="保存"
+            android:textColor="#000"
+            android:textSize="15sp" />
+        <!-- 取消button自带阴影效果-->
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#5000" />
+
+    <LinearLayout
+        android:id="@+id/rl_pic_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_width="237dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_head_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_logo"
+                roundedimageview:riv_oval="true"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_width="237dp"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:id="@+id/tv_name1"
+                    style="@style/AttrName"
+                    android:layout_marginTop="10dp"
+
+                    android:gravity="center"
+                    android:text="姓 ："
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:background="#0000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:background="#5000" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:id="@+id/tv_name1"
+                    style="@style/AttrName"
+                    android:layout_marginTop="10dp"
+
+                    android:gravity="center"
+                    android:text="名 ："
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:background="#0000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+
+                    android:background="#5000" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_phone"
+        style="@style/LinearItem">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/AttrName"
+            android:paddingBottom="20dp"
+            android:text="手机 ：" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="#0000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+
+            android:background="#5000" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_email"
+        style="@style/LinearItem">
+
+        <TextView
+            android:id="@+id/tv_email"
+            style="@style/AttrName"
+            android:paddingBottom="20dp"
+            android:text="邮箱：" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="#0000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+
+            android:background="#5000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_love"
+        style="@style/LinearItem">
+
+        <TextView
+            android:id="@+id/tv_love"
+            style="@style/AttrName"
+            android:paddingBottom="20dp"
+            android:text="关系亲密度：" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+
+                    android:background="#0000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+
+                    android:background="#5000" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:src="@drawable/plus" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:paddingLeft="10dp"
+                    android:src="@drawable/minus" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_address"
+        style="@style/LinearItem">
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/AttrName"
+            android:paddingBottom="20dp"
+            android:text="通讯地址：" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="#0000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+
+            android:background="#5000" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
