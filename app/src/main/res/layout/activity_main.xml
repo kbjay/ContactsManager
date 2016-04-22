@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 android:orientation="vertical"
-    tools:context=".activity.MainActivity">
+    tools:context="com.application.lol.contacts.activity.MainActivity">
 
 
 
@@ -15,7 +15,7 @@ android:orientation="vertical"
         android:onClick="jump_DetailActivity"
         android:text="jump_DetailActivity" />
     <Button
-        android:id="@+id/btn_jump_DetailActivity"
+        android:id="@+id/btn1_jump_DetailActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="jump_AddContactActivity"
